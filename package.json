@@ -2,9 +2,11 @@
   "name": "zentime",
   "version": "0.0.0",
   "description": "Zen Tine - service for accounting your time.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "webpack-dev-server --env.dev",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,21 @@
   "bugs": {
     "url": "https://github.com/sklyanchuk/zentime/issues"
   },
-  "homepage": "https://github.com/sklyanchuk/zentime#readme"
+  "homepage": "https://github.com/sklyanchuk/zentime#readme",
+  "dependencies": {
+    "babel-runtime": "^6.25.0",
+    "foo-bar": "0.0.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "webpack": "^3.5.3",
+    "webpack-dev-server": "^2.7.1"
+  }
 }

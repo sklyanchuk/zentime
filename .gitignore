@@ -1,5 +1,6 @@
-# IDE files
+# Junk
 .idea/
+.DS_Store
 
 # Dependencies
 node_modules
@@ -7,3 +8,12 @@ node_modules
 # Logs
 logs
 *.log
+
+# Cache
+/cache/
+.eslintcache
+
+# Build
+/dist/
+/reports/
+.tmp
