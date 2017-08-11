@@ -1,0 +1,24 @@
+{
+  "name": "zentime",
+  "version": "0.0.0",
+  "description": "Zen Tine - service for accounting your time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sklyanchuk/zentime.git"
+  },
+  "keywords": [
+    "time",
+    "productivity",
+    "efficiency"
+  ],
+  "author": "sklart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sklyanchuk/zentime/issues"
+  },
+  "homepage": "https://github.com/sklyanchuk/zentime#readme"
+}

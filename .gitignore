@@ -1,0 +1,9 @@
+# IDE files
+.idea/
+
+# Dependencies
+node_modules
+
+# Logs
+logs
+*.log
