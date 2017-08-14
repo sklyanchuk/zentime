@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -12,6 +13,7 @@ module.exports = {
       port: 3000,
     },
     plugins: [
+      new webpack.optimize.UglifyJsPlugin(),
       new HtmlWebpackPlugin({
         template: path.join(__dirname, 'src', 'index.html'),
       }),
