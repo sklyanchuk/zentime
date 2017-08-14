@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 const styles = {
   app: {
@@ -7,15 +7,15 @@ const styles = {
     textAlign: 'center',
     fontSize: '26px',
   },
-}
+};
 
 class App extends Component {
   render() {
     return (
       <div style={styles.app}>Welcome to Zen Time!</div>
-  )
+    )
   }
 }
 
-const root = document.querySelector('#app')
-ReactDOM.render(<App />, root)
+const root = document.querySelector('#app');
+ReactDOM.render(<App />, root);
