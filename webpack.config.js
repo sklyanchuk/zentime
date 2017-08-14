@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: path.join(__dirname, 'src', 'app.js'),
@@ -14,9 +15,8 @@ module.exports = {
     },
     plugins: [
       new webpack.optimize.UglifyJsPlugin(),
-      new HtmlWebpackPlugin({
-        template: path.join(__dirname, 'src', 'index.html'),
-      }),
+      new CleanWebpackPlugin(['dist']),
+      new HtmlWebpackPlugin({template: path.join(__dirname, 'src', 'index.html')}),
     ],
     module: {
       rules: [
