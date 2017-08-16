@@ -2,10 +2,11 @@ const
   webpack = require('webpack'),
   path = require('path'),
   HtmlWebpackPlugin = require('html-webpack-plugin'),
-  CleanWebpackPlugin = require('clean-webpack-plugin');
+  CleanWebpackPlugin = require('clean-webpack-plugin'),
+  isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  entry: path.join(__dirname, 'src', 'app.js'),
+  entry: path.resolve(__dirname, 'src', 'app.js'),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: 'bundle.js',
@@ -15,10 +16,9 @@ module.exports = {
     port: 3000,
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
-    new CleanWebpackPlugin(['dist']),
-    new HtmlWebpackPlugin({template: path.join(__dirname, 'src', 'index.html')}),
-  ],
+    isProduction ? new CleanWebpackPlugin(['dist']) : undefined,
+    new HtmlWebpackPlugin({template: path.resolve(__dirname, 'src', 'index.html')}),
+  ].filter(i => !!i),
   module: {
     rules: [
       {
@@ -31,6 +31,13 @@ module.exports = {
               cacheDirectory: true,
             },
           },
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
         ],
       },
     ],
