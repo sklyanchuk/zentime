@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "dev": "webpack-dev-server --env.dev",
-    "build": "webpack --watch"
+    "build": "webpack --env.prod"
   },
   "repository": {
     "type": "git",
