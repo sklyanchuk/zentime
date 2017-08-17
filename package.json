@@ -25,8 +25,10 @@
   "homepage": "https://github.com/sklyanchuk/zentime#readme",
   "dependencies": {
     "babel-runtime": "^6.26.0",
+    "moment": "^2.18.1",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -38,6 +40,7 @@
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.4",
     "html-webpack-plugin": "^2.30.1",
+    "redux-devtools": "^3.4.0",
     "style-loader": "^0.18.2",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
