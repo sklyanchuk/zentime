@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
-
-const styles = {
-  app: {
-    paddingTop: 40,
-    textAlign: 'center',
-    fontSize: '26px',
-  },
-};
+import css from './style.css';
 
 class WelcomePage extends Component {
   render() {
     return (
-      <div style={styles.app}>Welcome to Zen Time!</div>
+      <div className="welcome-page-title">
+        <p>Welcome to Zen Time!</p>
+        <a className="btn btn-about">About</a>
+      </div>
     )
   }
 }
