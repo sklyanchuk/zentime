@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
-const styles = {
-  app: {
-    paddingTop: 40,
-    textAlign: 'center',
-    fontSize: '26px',
-  },
-};
+import WelcomePage from './components/welcome-page/welcome-page';
 
 class App extends Component {
   render() {
     return (
-      <div style={styles.app}>Welcome to Zen Time!</div>
+      <WelcomePage />
     )
   }
 }
