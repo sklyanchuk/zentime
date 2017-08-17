@@ -1,16 +1,12 @@
 .welcome-page-title {
-  padding-top: 40px;
+  position: relative;
+  top: 30vh;
   text-align: center;
-  font-size: 26px;
+  font-size: 36px;
 }
-.btn {
-  padding: 2px 15px;
-  border-radius: 8px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
+
 .btn-about {
+  font-size: 28px;
   background-color: red;
   color: white;
 }
