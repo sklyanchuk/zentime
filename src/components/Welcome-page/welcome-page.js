@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from '../button/button.js'
+import Button from '../Button/button.js'
 import './style.css';
 
 class WelcomePage extends Component {
@@ -9,10 +9,10 @@ class WelcomePage extends Component {
         <p>Welcome to Zen Time!</p>
         <Button title="GitHub"
                 href="https://github.com/sklyanchuk/zentime"
-                className="btn btn-about"/>
+                className="btn-about"/>
         <Button title="Entry"
                 href="#"
-                className="btn btn-entry"/>
+                className="btn-entry"/>
       </div>
     )
   }
