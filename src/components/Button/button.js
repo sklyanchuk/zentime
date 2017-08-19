@@ -8,13 +8,16 @@ class Button extends Component {
       href: PropTypes.string,
       className: PropTypes.string,
       onClick: PropTypes.func,
+      target: PropTypes.string,
     };
 
   render() {
     return (
       <a href={this.props.href}
+         target={this.props.target}
          className={`btn ${this.props.className}`}
-         onClick={this.props.onClick}>{this.props.title}</a>
+         onClick={this.props.onClick}>{this.props.title}
+      </a>
     );
   }
 

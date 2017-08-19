@@ -7,8 +7,7 @@
 :root {
   width: 100%;
   height: 100%;
-  padding: 0 2%;
-  background: linear-gradient(to top left, powderblue, pink);
+  background-color: #e1dbdb;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -21,4 +20,7 @@
     Droid Sans,
     Helvetica Neue,
     sans-serif;
+}
+.container {
+  padding: 0 2%;
 }
