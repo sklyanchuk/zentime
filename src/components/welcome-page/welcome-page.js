@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from '../button/button.js'
 import './style.css';
 
 class WelcomePage extends Component {
@@ -6,8 +7,12 @@ class WelcomePage extends Component {
     return (
       <div className="welcome-page-title">
         <p>Welcome to Zen Time!</p>
-        <a href="https://github.com/sklyanchuk/zentime"
-           className="btn btn-about">About</a>
+        <Button title="GitHub"
+                href="https://github.com/sklyanchuk/zentime"
+                className="btn btn-about"/>
+        <Button title="Entry"
+                href="#"
+                className="btn btn-entry"/>
       </div>
     )
   }
