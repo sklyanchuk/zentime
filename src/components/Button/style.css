@@ -1,20 +1,20 @@
 .btn {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 10px 20px;
   margin: 0 10px;
   min-width: 100px;
   font-size: 24px;
-  border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
   border: none;
   outline: none;
 }
-.btn-about {
-  background-color: red;
-  color: white;
-}
+
 .btn-entry {
+  text-transform: uppercase;
   background-color: green;
   color: white;
+}
+.btn-entry:hover {
+  background-color: darkgreen;
 }

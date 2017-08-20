@@ -1,8 +1,29 @@
-.welcome-page-title {
+.welcome-page-jumbotron {
   position: relative;
   top: 20vh;
   text-align: center;
-  font-size: 36px;
+}
+.welcome-page-title {
+  color: white;
+  font-size: 48px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.github-link {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
 }
 
+@media (max-width: 650px) {
+  .welcome-page-title {
+    font-size: 30px;
+  }
+}
 
+@media (min-width: 1000px) {
+  .welcome-page-title {
+    font-size: 56px;
+  }
+}
