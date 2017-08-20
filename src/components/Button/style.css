@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 10px 20px;
   margin: 0 10px;
   min-width: 100px;
   font-size: 24px;
@@ -10,11 +10,14 @@
   border: none;
   outline: none;
 }
-.btn-about {
-  background-color: red;
-  color: white;
-}
+
 .btn-entry {
+  border: 2px solid green;
+  text-transform: uppercase;
+  background-color: white;
+  color: green;
+}
+.btn-entry:hover {
   background-color: green;
   color: white;
 }

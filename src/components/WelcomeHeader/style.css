@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  min-width: 270px;
 }
 .logo {
   width: 80px;
