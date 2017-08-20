@@ -18,16 +18,12 @@
 .welcome-link {
   margin-left: 10px;
   padding: 10px;
-  color: #222;
+  color: white;
+  text-decoration: none;
   transition: ease-out 0.1s;
 }
-.welcome-link:hover {
-  text-decoration: none;
+.welcome-link:hover:not(.welcome-sign-up) {
   color: red;
-}
-.welcome-link.welcome-sign-up {
-  text-decoration: none;
-  color: white;
 }
 .welcome-sign-up {
   background-color: red;

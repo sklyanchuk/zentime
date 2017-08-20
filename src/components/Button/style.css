@@ -4,7 +4,6 @@
   margin: 0 10px;
   min-width: 100px;
   font-size: 24px;
-  border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
   border: none;
@@ -12,12 +11,10 @@
 }
 
 .btn-entry {
-  border: 2px solid green;
   text-transform: uppercase;
-  background-color: white;
-  color: green;
-}
-.btn-entry:hover {
   background-color: green;
   color: white;
+}
+.btn-entry:hover {
+  background-color: darkgreen;
 }

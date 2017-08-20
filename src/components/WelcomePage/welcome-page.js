@@ -12,7 +12,7 @@ class WelcomePage extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container welcome-page">
         <WelcomeHeader />
         <div className="welcome-page-jumbotron">
           <p className="welcome-page-title">Welcome to Zen Time!</p>
