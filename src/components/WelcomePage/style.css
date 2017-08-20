@@ -3,10 +3,18 @@
   top: 20vh;
   text-align: center;
 }
-.welcome-page-title {
+.welcome-page-title,
+.welcome-page-subtitle {
   color: white;
-  font-size: 48px;
   text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.welcome-page-title {
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+.welcome-page-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 .github-link {
   width: 50px;
@@ -18,12 +26,18 @@
 
 @media (max-width: 650px) {
   .welcome-page-title {
-    font-size: 30px;
+    font-size: 28px;
+  }
+  .welcome-page-subtitle {
+    font-size: 14px;
   }
 }
 
 @media (min-width: 1000px) {
   .welcome-page-title {
     font-size: 56px;
+  }
+  .welcome-page-subtitle {
+    font-size: 22px;
   }
 }

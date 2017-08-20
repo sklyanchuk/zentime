@@ -15,7 +15,8 @@ class WelcomePage extends Component {
       <div className="container welcome-page">
         <WelcomeHeader />
         <div className="welcome-page-jumbotron">
-          <p className="welcome-page-title">Welcome to Zen Time!</p>
+          <h1 className="welcome-page-title">Welcome to Zen Time!</h1>
+          <p className="welcome-page-subtitle">The service for accounting of your time.</p>
           <Button title="Start"
                   href="#"
                   className="btn-entry"
