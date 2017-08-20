@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
-import logo from '../../assets/images/logo.jpg';
+import logo from '../../assets/images/logo-2.png';
 
 class WelcomeHeader extends Component {
 
