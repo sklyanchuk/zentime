@@ -16,9 +16,9 @@ module.exports = {
     port: 3000,
   },
   plugins: [
-    isProduction ? new CleanWebpackPlugin(['dist']) : undefined,
+    ...(isProduction ? [new CleanWebpackPlugin([path.resolve(__dirname, 'dist')])] : []),
     new HtmlWebpackPlugin({template: path.resolve(__dirname, 'src', 'index.html')}),
-  ].filter(i => !!i),
+  ],
   module: {
     rules: [
       {
