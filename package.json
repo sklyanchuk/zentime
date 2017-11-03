@@ -1,7 +1,7 @@
 {
   "name": "zentime",
   "version": "0.0.0",
-  "description": "Zen Tine - service for accounting your time.",
+  "description": "Zen Time - a service for accounting of your time.",
   "main": "app.js",
   "scripts": {
     "test": "test",
