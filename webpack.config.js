@@ -20,6 +20,12 @@ module.exports = {
     ...(isProduction ? [new CleanWebpackPlugin([path.resolve(__dirname, 'dist')])] : []),
     new HtmlWebpackPlugin({template: path.resolve(__dirname, 'src', 'index.html')}),
   ],
+  resolve: {
+    modules: [
+      path.resolve(__dirname, 'src'),
+      'node_modules'
+    ]
+  },
   module: {
     rules: [
       {
