@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Button from '../Button/button';
-import WelcomeHeader from '../WelcomeHeader/welcome-header'
+import Button from 'components/Button/button';
+import WelcomeHeader from 'components/WelcomeHeader/welcome-header'
 import './style.css';
-import github from '../../assets/images/github.png';
+import github from 'assets/images/github.png';
 
 class WelcomePage extends Component {
 
