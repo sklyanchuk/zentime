@@ -9,7 +9,7 @@ class WelcomeHeader extends Component {
       <div className="welcome-header container">
         <div className="logo">
           <a href="/">
-            <img src={logo} alt="Zen Time Logo" width="80" height="80"/>
+            <img src={logo} alt="ZenTime Logo" width="80" height="80"/>
           </a>
         </div>
         <nav className="welcome-menu">

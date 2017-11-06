@@ -1,2 +1,3 @@
-# zentime
-Zen Time - The service for accounting of your time.
+# ZenTime
+
+ZenTime is your time accounting service.
