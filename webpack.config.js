@@ -1,9 +1,9 @@
-const
-  webpack = require('webpack'),
-  path = require('path'),
-  HtmlWebpackPlugin = require('html-webpack-plugin'),
-  CleanWebpackPlugin = require('clean-webpack-plugin'),
-  isProduction = process.env.NODE_ENV === 'production';
+const webpack = require('webpack');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'app.js'),
@@ -12,13 +12,20 @@ module.exports = {
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    historyApiFallback: true,
+    open: true,
     port: 3000,
   },
   plugins: [
-    isProduction ? new CleanWebpackPlugin(['dist']) : undefined,
+    ...(isProduction ? [new CleanWebpackPlugin([path.resolve(__dirname, 'dist')])] : []),
     new HtmlWebpackPlugin({template: path.resolve(__dirname, 'src', 'index.html')}),
-  ].filter(i => !!i),
+  ],
+  resolve: {
+    modules: [
+      path.resolve(__dirname, 'src'),
+      'node_modules'
+    ]
+  },
   module: {
     rules: [
       {

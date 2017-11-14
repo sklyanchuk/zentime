@@ -1,15 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import './style.css';
 
 class Button extends Component {
-
-  static
-    propTypes = {
-      href: PropTypes.string,
-      className: PropTypes.string,
-      onClick: PropTypes.func,
-      target: PropTypes.string,
-    };
 
   render() {
     return (
