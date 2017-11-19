@@ -6,7 +6,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src', 'app.js'),
+  entry: path.resolve(__dirname, 'src', 'app.tsx'),
+  devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: 'bundle.js',
@@ -21,6 +22,7 @@ module.exports = {
     new HtmlWebpackPlugin({template: path.resolve(__dirname, 'src', 'index.html')}),
   ],
   resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
     modules: [
       path.resolve(__dirname, 'src'),
       'node_modules'
@@ -29,16 +31,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.js$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              cacheDirectory: true,
-            },
-          },
-        ],
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.(png|jpg|gif)$/,

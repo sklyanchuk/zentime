@@ -1,10 +1,12 @@
-import React from 'react';
-import {Button} from '../Button/button';
-import {WelcomeHeader} from '../WelcomeHeader/welcome-header'
-import './style.css';
-import github from 'assets/images/github.png';
+import * as React from 'react';
 
-export function WelcomePage() {
+import {Button} from 'components/Button/button';
+import {WelcomeHeader} from 'components/WelcomeHeader/welcome-header';
+
+import github from 'assets/images/github.png';
+import './style.css';
+
+export const WelcomePage: React.SFC = () => {
 
   const onEntryClick = () =>
     alert('Service is not ready!');
@@ -30,4 +32,4 @@ export function WelcomePage() {
       </a>
     </div>
   );
-}
+};
