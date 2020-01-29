@@ -5,7 +5,7 @@ import * as ReactDOM from 'react-dom';
 import 'assets/styles/global.css';
 import {WelcomePage} from './components/WelcomePage/welcome-page';
 
-export const App: React.SFC = () => (
+export const App: React.FC<{}> = () => (
   <WelcomePage />
 );
 

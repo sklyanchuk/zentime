@@ -9,7 +9,7 @@ export interface IButtonProps {
   onClick: () => void;
 }
 
-export const Button: React.SFC<IButtonProps> = props => (
+export const Button: React.FC<IButtonProps> = props => (
   <a href={props.href}
      target={props.target}
      className={`btn ${props.className}`}

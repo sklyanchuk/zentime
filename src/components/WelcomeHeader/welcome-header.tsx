@@ -3,7 +3,7 @@ import * as React from 'react';
 import logo from 'assets/images/logo-2.png';
 import './style.css';
 
-export const WelcomeHeader: React.SFC = () => (
+export const WelcomeHeader: React.FC<{}> = () => (
   <div className="welcome-header container">
     <div className="logo">
       <a href="/">

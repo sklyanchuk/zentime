@@ -6,7 +6,7 @@ import {WelcomeHeader} from 'components/WelcomeHeader/welcome-header';
 import github from 'assets/images/github.png';
 import './style.css';
 
-export const WelcomePage: React.SFC = () => {
+export const WelcomePage: React.FC<{}> = () => {
 
   const onEntryClick = () =>
     alert('Service is not ready!');
