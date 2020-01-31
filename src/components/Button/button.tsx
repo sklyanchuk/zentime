@@ -1,7 +1,8 @@
-import * as React from 'react';
-import './style.css';
+import * as React from "react";
 
-export interface IButtonProps {
+import "./style.css";
+
+interface Props {
   href: string;
   target?: string;
   className: string;
@@ -9,10 +10,19 @@ export interface IButtonProps {
   onClick: () => void;
 }
 
-export const Button: React.FC<IButtonProps> = props => (
-  <a href={props.href}
-     target={props.target}
-     className={`btn ${props.className}`}
-     onClick={props.onClick}>{props.title}
+export const Button: React.FC<Props> = ({
+  href,
+  target,
+  className,
+  title,
+  onClick
+}) => (
+  <a
+    href={href}
+    target={target}
+    className={`btn ${className}`}
+    onClick={onClick}
+  >
+    {title}
   </a>
 );
